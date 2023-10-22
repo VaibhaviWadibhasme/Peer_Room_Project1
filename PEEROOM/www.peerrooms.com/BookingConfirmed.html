@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <!-- Add necessary CSS and JavaScript files here -->
+    <!-- For example, you may include Bootstrap CSS and JS -->
+    <link rel="stylesheet" href="css/bk.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmation</h1>
+        
+        <!-- Navigation menu -->
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-details-tab" data-toggle="pill" data-target="#pills-details" type="button" role="tab" aria-controls="pills-details" aria-selected="true">
+                    <span>Booking Details</span>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link show active" id="pills-bookingpayment-tab" data-toggle="pill" data-target="#pills-bookingpayment" type="button" role="tab" aria-controls="pills-bookingpayment" aria-selected="true">
+                    <span>Make Payment</span>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" type="button" aria-selected="false">
+                    <span>Booking Confirmed</span>
+                </button>
+            </li>
+        </ul>
+        
+        <!-- Booking details and payment summary -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
+                <!-- Include your booking details content here -->
+                <h2>Booking Details</h2>
+                <!-- Add your content specific to booking details -->
+            </div>
+            <div class="tab-pane fade show active" id="pills-bookingpayment" role="tabpanel" aria-labelledby="pills-bookingpayment-tab">
+                <!-- Include your payment details and summary content here -->
+                <h2>Make Payment</h2>
+                <form action="https://www.olerooms.com/customer/payment-success" method="post" id="addPaymentForm">
+                    <!-- Include the input fields and hidden inputs from the second code snippet -->
+                    <!-- Add your payment summary and related elements -->
+                </form>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <!-- Include your booking confirmation content here -->
+                <h2>Booking Confirmed</h2>
+                <!-- Add your content specific to booking confirmation -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add necessary JavaScript files here -->
+    <!-- For example, you may include jQuery and Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
